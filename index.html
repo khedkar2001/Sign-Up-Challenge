@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form>
+      <div class="email-container">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="example@email.com" onchange="myFunc()">
+        <p id="email-warning">Make sure email is more than 3 characters and has @ and a .</p>
+      </div>
+      <div class="password-container">
+        
+        <label for="password">Password</label>
+        <input type="text" id="password" placeholder="Your Password" onchange="myFunc()">
+        <p id="password-warning">Make sure password is more than 8 characters.</p>
+      </div>
+      <p id="validEP" class="validEmailPass hidden">All good to go</p>
+      <button id="btn" type="submit">Submit</button>
+    </form>
+    
+    
+  </div>
+
+  <script src="./script.js"></script>
+  
+</body>
+</html>
